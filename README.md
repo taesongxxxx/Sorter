@@ -124,8 +124,8 @@
 ```java
         long start = System.currentTimeMillis();
         ~~~
-        long finshi = System.currentTimeMillis();
-        System.out.println("~~ 정렬: "+(finshi-start)+ "ms");
+        long finish = System.currentTimeMillis();
+        System.out.println("~~ 정렬: "+(finish-start)+ "ms");
 ```
 **▼n = 1000**
 |상태\정렬|버블 정렬|선택 정렬|삽입 정렬|쉘 정렬|
@@ -304,25 +304,25 @@ public class Sorter implements type{
 
         long start1 = System.currentTimeMillis();
         sorter.Bubble(A1);
-        long finshi1 = System.currentTimeMillis();
+        long finish1 = System.currentTimeMillis();
 
         long start2 = System.currentTimeMillis();
         sorter.Selection(A2);
-        long finshi2 = System.currentTimeMillis();
+        long finish2 = System.currentTimeMillis();
 
         long start3 = System.currentTimeMillis();
         sorter.Insertion(A3);
-        long finshi3 = System.currentTimeMillis();
+        long finish3 = System.currentTimeMillis();
 
         long start4 = System.currentTimeMillis();
         sorter.Shell(A4);
-        long finshi4 = System.currentTimeMillis();
+        long finish4 = System.currentTimeMillis();
 
         System.out.println("Random -> 오름차순");
-        System.out.println("버블 정렬: "+(finshi1-start1)+ "ms");
-        System.out.println("선택 정렬: "+(finshi2-start2)+ "ms");
-        System.out.println("삽입 정렬: "+(finshi3-start3)+ "ms");
-        System.out.println("쉘 정렬: "+(finshi4-start4)+ "ms");
+        System.out.println("버블 정렬: "+(finish1-start1)+ "ms");
+        System.out.println("선택 정렬: "+(finish2-start2)+ "ms");
+        System.out.println("삽입 정렬: "+(finish3-start3)+ "ms");
+        System.out.println("쉘 정렬: "+(finish4-start4)+ "ms");
         System.out.println();
 
         sorter.descending(A1);
@@ -332,25 +332,25 @@ public class Sorter implements type{
 
         start1 = System.currentTimeMillis();
         sorter.Bubble(A1);
-        finshi1 = System.currentTimeMillis();
+        finish1 = System.currentTimeMillis();
 
         start2 = System.currentTimeMillis();
         sorter.Selection(A2);
-        finshi2 = System.currentTimeMillis();
+        finish2 = System.currentTimeMillis();
 
         start3 = System.currentTimeMillis();
         sorter.Insertion(A3);
-        finshi3 = System.currentTimeMillis();
+        finish3 = System.currentTimeMillis();
 
         start4 = System.currentTimeMillis();
         sorter.Shell(A4);
-        finshi4 = System.currentTimeMillis();
+        finish4 = System.currentTimeMillis();
 
         System.out.println("내림차순 -> 오름차순");
-        System.out.println("버블 정렬: "+(finshi1-start1)+ "ms");
-        System.out.println("선택 정렬: "+(finshi2-start2)+ "ms");
-        System.out.println("삽입 정렬: "+(finshi3-start3)+ "ms");
-        System.out.println("쉘 정렬: "+(finshi4-start4)+ "ms");
+        System.out.println("버블 정렬: "+(finish1-start1)+ "ms");
+        System.out.println("선택 정렬: "+(finish2-start2)+ "ms");
+        System.out.println("삽입 정렬: "+(finish3-start3)+ "ms");
+        System.out.println("쉘 정렬: "+(finish4-start4)+ "ms");
         System.out.println();
 
         sorter.almost(A1);
@@ -360,25 +360,25 @@ public class Sorter implements type{
 
         start1 = System.currentTimeMillis();
         sorter.Bubble(A1);
-        finshi1 = System.currentTimeMillis();
+        finish1 = System.currentTimeMillis();
 
         start2 = System.currentTimeMillis();
         sorter.Selection(A2);
-        finshi2 = System.currentTimeMillis();
+        finish2 = System.currentTimeMillis();
 
         start3 = System.currentTimeMillis();
         sorter.Insertion(A3);
-        finshi3 = System.currentTimeMillis();
+        finish3 = System.currentTimeMillis();
 
         start4 = System.currentTimeMillis();
         sorter.Shell(A4);
-        finshi4 = System.currentTimeMillis();
+        finish4 = System.currentTimeMillis();
 
         System.out.println("거의 정렬 -> 오름차순");
-        System.out.println("버블 정렬: "+(finshi1-start1)+ "ms");
-        System.out.println("선택 정렬: "+(finshi2-start2)+ "ms");
-        System.out.println("삽입 정렬: "+(finshi3-start3)+ "ms");
-        System.out.println("쉘 정렬: "+(finshi4-start4)+ "ms");
+        System.out.println("버블 정렬: "+(finish1-start1)+ "ms");
+        System.out.println("선택 정렬: "+(finish2-start2)+ "ms");
+        System.out.println("삽입 정렬: "+(finish3-start3)+ "ms");
+        System.out.println("쉘 정렬: "+(finish4-start4)+ "ms");
     }
 }
 ```
